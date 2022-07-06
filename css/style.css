@@ -29,7 +29,7 @@ h2 {
     font-size: 64px;
 }
 
-h4 {
+h3 {
     font-size: 48px;
 }
 
@@ -59,7 +59,7 @@ p {
 }
 
 .content-container {
-    padding: 160px 20px;
+    padding: 60px 20px;
 }
 
 .content h1 {
@@ -118,7 +118,7 @@ p {
     text-transform: uppercase;
 }
 
-nav {
+.nav-logo nav {
     padding: 10px 0;
 }
 
@@ -145,7 +145,7 @@ nav li.active a {
 }
 
 footer {
-    margin: 60px 0;
+    margin: 60px 0 30px;
 }
 
 footer p {
@@ -185,6 +185,16 @@ footer .social-links a:hover {
     background: var(--branding-color);
 }
 
+footer p a {
+    text-decoration: none;
+    color: var(--branding-color);
+    transition: all 0.1s ease-in-out;
+}
+
+footer p a:hover {
+    color: blue;
+}
+
 @media (max-width: 1200px) {
     .project-description {
         padding: 30px;
@@ -202,7 +212,7 @@ footer .social-links a:hover {
         font-size: 44px;
     }
 
-    h4 {
+    h3 {
         font-size: 26px;
     }
 
