@@ -104,6 +104,42 @@ p {
     padding: 120px 60px;
 }
 
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-logo span {
+    color: var(--branding-color);
+    text-transform: uppercase;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    margin-left: 15px;
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+    transition: all 0.1s ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--branding-color);
+}
+
 @media (max-width: 1200px) {
     .project-description {
         padding: 30px;
@@ -132,6 +168,22 @@ p {
 
     .content {
         text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav li {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 465px) {
+    nav li {
         padding: 0;
     }
 }
